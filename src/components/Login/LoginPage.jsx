@@ -28,7 +28,7 @@ const Login = () => {
       if (response.data.length > 0) {
 
         const user = response.data[0];
-        console.log('Login successful:', user);
+        
 
         localStorage.setItem('user', JSON.stringify(user));
         localStorage.setItem('isLoggedIn', 'true');
