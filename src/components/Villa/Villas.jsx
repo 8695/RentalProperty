@@ -10,9 +10,31 @@ import { Link } from 'react-router-dom';
 const Villas = () => {
   return (
     <>
-        <div className="page" id='allVillas'>
-          <h1>ALL VILLAS</h1>
-          <p>{villas.length} Properties</p>
+     <div className="villas-page">
+
+      <div className="villas-hero">
+        <div className="villas-hero-content">
+          <h1>Discover Luxury Villas</h1>
+          <p>Experience the finest vacation rentals with premium amenities</p>
+        </div>
+      </div>
+
+      <div className="villas-container">
+        <div className="villas-header">
+          <div className="villas-title-section">
+            <h2>All Luxury Villas</h2>
+            <p>{villas.length} Premium Properties Available</p>
+          </div>
+          
+          <div className="filter-section">
+            <div className="filter-buttons">
+              <button className="filter-btn active">All</button>
+              <button className="filter-btn">Beachfront</button>
+              <button className="filter-btn">Mountain</button>
+              <button className="filter-btn">Luxury</button>
+            </div>
+          </div>
+        </div>
           <div className="villasContainer">
         {villas.map((element) => {
           return (
@@ -56,6 +78,7 @@ const Villas = () => {
         })}
       </div>
         </div>
+    </div>
     </>
   )
 }

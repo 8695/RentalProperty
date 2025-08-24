@@ -9,6 +9,7 @@ import TermsAndConditions from './components/TermsAndConditions/TermsAndConditio
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import './App.css'
+import Login from './components/Login/LoginPage';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Navbar/>
         <Routes>
           <Route path='/' element={<Home/>}/>
+          <Route path ="/login" element={<Login />}/>
           <Route path='/aboutus' element={<AboutUs/>}/>
           <Route path='/contact' element={<Contact/>}/>
           <Route path='/termsandconditions' element={<TermsAndConditions/>}/>
